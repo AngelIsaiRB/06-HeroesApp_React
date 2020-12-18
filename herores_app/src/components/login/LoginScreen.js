@@ -17,7 +17,6 @@ export const LoginScreen = ({history}) => {
         });
         history.replace(lastPath);
     };
-
     return (
         <div clasname="container mt-5">
             <h1>Login Screen</h1>
