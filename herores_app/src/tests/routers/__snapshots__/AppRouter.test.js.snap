@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en el componente <AppRouter/> should mostrar login si no estoy autentificado 1`] = `
+<div>
+  <div
+    clasname="container mt-5"
+  >
+    <h1>
+      Login Screen
+    </h1>
+    <hr />
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Login
+    </button>
+  </div>
+</div>
+`;
