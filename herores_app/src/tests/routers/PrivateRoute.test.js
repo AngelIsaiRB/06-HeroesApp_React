@@ -3,6 +3,10 @@ import { mount } from 'enzyme';
 import { PrivateRoute } from '../../routers/PrivateRoute';
 import { MemoryRouter } from 'react-router-dom';
 
+const App = React.createClass({
+    
+})
+
 
 describe('pruebas en <PrivateRoute/>', () => {
 
@@ -11,6 +15,8 @@ describe('pruebas en <PrivateRoute/>', () => {
             pathname: '/marvel'
         }
     }
+
+    Storage.prototype.setItem = jest.fn();
 
     test('debe de mostrar el componente si está autenticado y guardar localStorage', () => {
         
