@@ -3,9 +3,7 @@ import { mount } from 'enzyme';
 import { PrivateRoute } from '../../routers/PrivateRoute';
 import { MemoryRouter } from 'react-router-dom';
 
-const App = React.createClass({
-    
-})
+
 
 
 describe('pruebas en <PrivateRoute/>', () => {
@@ -31,9 +29,25 @@ describe('pruebas en <PrivateRoute/>', () => {
         );
 
         expect( wrapper.find('span').exists() ).toBe(true);
-        // expect( localStorage.setItem ).toHaveBeenCalledWith('lastPath', '/marvel');
+        expect( localStorage.setItem ).toHaveBeenCalledWith('lastPath', '/marvel');
 
 
-    })
+    });
+
+
+    // test('should de bloquear el componente si no esta autentiicado', () => {
+    //     const wrapper = mount(
+    //         <MemoryRouter>
+    //             <PrivateRoute 
+    //                 isAuthenticated={ true }
+    //                 component={ () => <span>Listo!</span> }
+    //                 { ...props }
+    //             />
+    //         </MemoryRouter>
+    //     );
+
+    //     expect( wrapper.find('').exists() ).toBe(true);
+    // });
+    
         
 })
