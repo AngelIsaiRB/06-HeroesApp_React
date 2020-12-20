@@ -71,8 +71,7 @@ describe('pruebas en <HeroScreen/> ', () => {
                 </Route>                
             </MemoryRouter>
         );
-         expect(wrapper.text()).toBe("");
-        
+         expect(wrapper.text()).toBe("");        
     });
     
     
