@@ -54,7 +54,7 @@ describe('pruebas en <SearchScreen/>', () => {
 
        wrapper.find("input").simulate("change",{
             target:{
-                name: "search",
+                name: "search", // del input del formulario cambia con cada formulario !!!!!!
                 value:"batman"
             }
        });
